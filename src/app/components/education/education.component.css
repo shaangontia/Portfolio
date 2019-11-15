@@ -1,0 +1,110 @@
+.education-section {
+  width: 100%;
+  height: 400px;
+}
+
+.col-lg-6 {
+  flex: 0 0 50%;
+  width: 50%;
+  background-color: #191a1d;
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+li {
+  text-align: -webkit-match-parent;
+}
+
+.subHeading {
+  text-align: center;
+  overflow: hidden;
+  color: white;
+}
+
+*:after, *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.sub-heading h3:after {
+  background: #F5AE51;
+  content: " ";
+  height: 4px;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  width: 50px;
+  border-radius: 2px;
+  transform: translateX(-50%);
+}
+
+.sub-heading h3:after {
+  background: #F5AE51;
+}
+
+.experience, .education {
+  border-left: 4px solid #e1e1e1;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  background: rgba(255, 255, 255, 0.03);
+  color: #e1e1e1;
+  position: relative;
+  padding: 50px;
+  list-style: none;
+  text-align: left;
+  max-width: 90%;
+  margin: 0 auto 50px auto;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  border-color: #F5AE51;
+
+}
+
+.experience h5, .education h5 {
+  color: #F5AE51;
+}
+
+.experience .event, .education .event {
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.experience .event:after, .education .event:after {
+  -webkit-box-shadow: 0 0 0 4px #e1e1e1;
+  box-shadow: 0 0 0 4px #e1e1e1;
+  left: -57.85px;
+  background: #313534;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+  position: absolute;
+  display: block;
+  top: 5px;
+}
+.experience .event:last-of-type,  .education .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+.experience h5 .date, .education h5 .date {
+  margin-right: 5px;
+  padding-right: 10px;
+  border-right: 3px solid #e1e1e1;
+}

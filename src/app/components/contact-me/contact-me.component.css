@@ -1,0 +1,98 @@
+div {
+  font-family: "Helvetica Neue";
+  margin-top: -48px;
+
+}
+.contactMe {
+  background-color: #191a1d;
+  height: 500px;
+  max-width: 100%;
+  display: flex;
+  clip-path: polygon(100% 20%, 100% 100%, 0 100%, 0 0%);
+}
+
+h1{
+  color: white;
+}
+
+.workTogetherContent {
+  font-size: large;
+  line-height: 5.5rem;
+}
+.right-content {
+  color: #ffffff;
+  padding-top: 9%;
+  padding-left: 10%;
+}
+
+.left-content{
+  display: inline-block;
+  position: absolute;
+  padding-top: 9%;
+  padding-left: 65%;
+}
+.socials {
+  padding: 1.3rem 0;
+  position: absolute;
+  margin-top: 8px;
+}
+
+.socials ul li {
+  display: block;
+}
+
+.socials .ico-circle {
+  height: 40px;
+  width: 40px;
+  font-size: 1.7rem;
+  border-radius: 50%;
+  line-height: 1.4;
+  margin: 0px 15px 18px 0;
+  box-shadow: 0 0 0 3px #0078ff;
+  overflow: hidden;
+}
+
+.ico-circle {
+  height: 50px;
+  width: 50px;
+  font-size: 2rem;
+  border-radius: 50%;
+  line-height: 1.55;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 0 0 10px #0078ff;
+  display: inline-block;
+  transition: transform .5s ease;
+  background-color: white;
+}
+.socials .ico-circle:hover {
+  background-color: #0078ff;
+  color: #fff;
+  box-shadow: 0 0 0 3px #cde1f8;
+  transform: scale(1.2);
+  background-color: white;
+}
+
+.ion-social-icon {
+  display: inline-block;
+  color: #ffffff;
+  font-family: "Apple Color Emoji";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.content {
+  padding-top: 100px;
+  padding-left: 100px;
+}
+.contactMeLabel {
+  font-size: 23px;
+  color: #ffffff;
+}

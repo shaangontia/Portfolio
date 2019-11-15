@@ -1,0 +1,67 @@
+<section id="about">
+  <div class="container">
+    <div class="page-heading">
+      <h2 data-shadow="About">About</h2>
+    </div>
+
+    <!--About Info Section Start-->
+    <div class="row about-info mb-60">
+      <div class="col-lg-5">
+        <!-- about image -->
+        <div class="about-img">
+          <img src="../assets/profile_pic.png" alt="" />
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <h3 class="mb-20">Font End Developer</h3>
+        <p [innerHTML]="about.description">
+
+        </p>
+
+        <div class="row mb-20">
+          <div class="col-sm-6">
+            <!-- about list -->
+            <ul class="about-list">
+              <li>
+                <span class="title">Name </span>
+                <span class="value">{{about.name}}</span>
+              </li>
+              <li>
+                <span class="title">Age </span>
+                <span class="value">{{about.age}}</span>
+              </li>
+              <li>
+                <span class="title">Email </span>
+                <span class="value">{{about.email}}</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <!-- about list -->
+            <ul class="about-list">
+              <li>
+                <span class="title">Phone </span>
+                <span class="value">{{about.contact}}</span>
+              </li>
+              <li>
+                <span class="title">Address </span>
+                <span class="value">{{about.address}}</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <!-- resume button -->
+            <div class="resume-button">
+              <a class="main-btn" href="../../assets/Shantanu_resume.pdf" target="_blank">Download CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--About Info Section End-->
+  </div>
+</section>

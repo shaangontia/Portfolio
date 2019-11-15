@@ -1,0 +1,48 @@
+section {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./introPic.jpg"); z-index: 6; opacity: 1;
+}
+
+.nav-link:hover {
+  #text-transform: uppercase;
+  color: #F5AE51;
+}
+
+div ul {
+  font-size: large;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+h3 {
+  font-size: 32px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  line-height: 1.2;
+  color: #F5AE51;
+}
+
+.profile-img{
+  animation-name: spin;
+  animation-duration: 1s; /* 3 seconds */
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  transform-style: preserve-3d;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

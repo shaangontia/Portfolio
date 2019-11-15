@@ -1,0 +1,27 @@
+.footer {
+  text-align: center;
+  height: 50px;
+  box-sizing: border-box;
+  background-color: #101114;
+  font-weight: 300;
+  margin-top: 1px;
+
+}
+
+.footer__inner {
+  max-width: 92%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+p {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  text-align: center;
+  color: #5e5e5e;
+  font-size: 1.24rem;
+  overflow: hidden;
+  padding-top: 10px;
+  height: 40px;
+  margin-bottom: 0px;
+}
