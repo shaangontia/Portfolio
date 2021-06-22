@@ -10,7 +10,7 @@ export class AboutComponent {
   getAge() {
     const birthdate = new Date("1989/08/21");
     const cur = new Date();
-    const diff = cur - birthdate;
+    let diff: number = Number(cur) - Number(birthdate);
     return Math.floor(diff / 31557600000);
   }
 
