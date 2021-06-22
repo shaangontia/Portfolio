@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactMeComponent {
   fbSrc = '../../assets/fb.png';
+  linkedInSrc = '../../assets/linkedIn.png';
   instaSrc = '../../assets/insta.jpeg';
   twitterSrc = '../../assets/twitter.png';
   mailSrc = '../../assets/mail.jpeg';
