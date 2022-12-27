@@ -1,28 +1,27 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import { Link, Router } from 'react-router-dom';
+import Navbar from './Navbar';
+import Logo from './Logo';
 //------------------
 // Container
 //------------------
 
 const HeaderContainer = styled.div`
-	background-color: #f4eed9;
 	min-height: 4rem;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
 	display: flex;
-	@media (max-width: 200px) {
-		max-width: 100%;
-		font-size: 0.7em;
-	}
+	justify-content: space-around;
+	align-items: center;
 `;
 
-const H1 = styled.h1`
-	color: #41564b;
-	@media (max-width: 200px) {
-		font-size: 10px;
-		color: blue;
-	}
-`;
+const name = `𝓢𝓱𝓪𝓪𝓷`; //TODO: take it out to a const file
 
 export const Header: React.FC = () => (
-	<HeaderContainer>This is a Responsive Header</HeaderContainer>
+	<HeaderContainer>
+		<Logo />
+		<Navbar />
+	</HeaderContainer>
 );
