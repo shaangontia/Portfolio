@@ -20,8 +20,6 @@ const HeaderContainer = styled.div`
 	}
 `;
 
-const name = `𝓢𝓱𝓪𝓪𝓷`; //TODO: take it out to a const file
-
 export const Header: React.FC = () => (
 	<HeaderContainer>
 		<Logo />
