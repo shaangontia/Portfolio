@@ -3,7 +3,7 @@ import Img from '../../assets/logo.png';
 
 const IMG = styled.img`
 	max-width: 100%;
-	max-height: 40px;
+	max-height: 80px;
 	background-blend-mode: screen;
 `;
 function Logo() {

@@ -11,15 +11,34 @@ const NavList = styled.ul`
 	display: flex;
 	align-items: center;
 	list-style: none;
-	margin: 0;
+	@media (max-width: 700px) {
+		flex-direction: column;
+		align-items: baseline;
+		padding: 0;
+	}
 `;
 const NavItem = styled.li`
+	font-size: 2rem;
 	margin: 0 1.2rem;
-	border-bottom: 1px solid;
+	@media (max-width: 700px) {
+		margin: 0;
+		font-size: 1.5rem;
+		padding: 0;
+	}
 `;
 
 const Anchor = styled.a`
 	text-decoration: none;
+	transform: scaleX(0);
+	transition: transform 250ms ease-in-out;
+	&:hover,
+	:active {
+		border-bottom: 2px solid;
+		transform-origin: 0% 50%;
+	}
+	&:visited {
+		color: inherit;
+	}
 `;
 
 function Navbar() {

@@ -15,6 +15,9 @@ const HeaderContainer = styled.div`
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
 `;
 
 const name = `𝓢𝓱𝓪𝓪𝓷`; //TODO: take it out to a const file
