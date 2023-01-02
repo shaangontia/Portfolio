@@ -1,34 +1,36 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
-import { Link, Router } from 'react-router-dom'
 import Navbar from './Navbar'
 import Logo from './Logo'
-interface ScrollProps {
-    scrollTop: number
-}
+import './Header.css'
+import { useScrollTop } from './Hooks'
 
-function useScrollTop() {
-    const [scrollTop, setScrollTop] = useState(0)
-    const onScroll = (event: any) => setScrollTop(event.target.scrollTop)
-    return [scrollTop, { onScroll }]
-}
 const HeaderContainer = styled.div<any>`
     min-height: 4rem;
     position: fixed;
     width: 100%;
     z-index: 10;
+    left: 0;
+    top: 0;
+    transition: padding 0.3s;
     display: flex;
-    border-bottom: ${(props) => (props.scrollTop > 0 ? '0.5px solid' : '')};
+    border-bottom: ${(props) =>
+        props.scrollTop > 0 ? '0.1px solid #fff' : ''};
     justify-content: space-around;
     align-items: center;
     @media (max-width: 768px) {
         flex-direction: column;
     }
+    padding: ${(props) => (props.scrollTop > 0 ? '8px 0' : '24px 0')};
+    margin-bottom: 40px;
 `
 
-export const Header: React.FC = () => (
-    <HeaderContainer {...useScrollTop}>
-        <Logo />
-        <Navbar />
-    </HeaderContainer>
-)
+export const Header: React.FC = () => {
+    const scrollPosition = useScrollTop()
+    return (
+        <HeaderContainer scrollTop={scrollPosition}>
+            <Logo />
+            <Navbar />
+        </HeaderContainer>
+    )
+}
