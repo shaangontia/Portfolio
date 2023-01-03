@@ -15,7 +15,7 @@ const HeaderContainer = styled.div<any>`
     transition: padding 0.3s;
     display: flex;
     border-bottom: ${(props) =>
-        props.scrollTop > 0 ? '0.1px solid #fff' : ''};
+        props.scrollTop > 0 ? '0.1px solid #454854' : ''};
     justify-content: space-around;
     align-items: center;
     @media (max-width: 768px) {
